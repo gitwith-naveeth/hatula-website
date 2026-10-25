@@ -234,6 +234,7 @@ const route = (p = '') => {
   const clean = p.startsWith('/') ? p : `/${p}`;
   return `${siteBase}${isAr ? '/ar' : ''}${clean}`.replace(/\/+/g, '/') || '/';
 };
+const assetPath = (p = '') => `${siteBase}/assets/${p.replace(/^\/+/, '')}`;
 const esc = (s) => String(s || '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
 
 function languageTarget() {
@@ -486,7 +487,7 @@ function productCard(p) {
   return `
     <article class="product-card" data-slug="${p.slug}">
       <div class="product-card-img">
-        ${imageSrc ? `<img src="${imageSrc}" alt="${esc(T(p))}" loading="lazy">` : getCategoryIcon(p.category)}
+        ${imageSrc ? `<img src="${assetPath(imageSrc)}" alt="${esc(T(p))}" loading="lazy">` : getCategoryIcon(p.category)}
       </div>
       <span class="product-tag">${esc(T(cat))}</span>
       <h3><a href="${detailUrl}" style="color:inherit;">${esc(T(p))}</a></h3>
@@ -604,7 +605,7 @@ function homePage() {
           <div class="category-grid">
             ${categories.map(c => `
               <a class="category-card" href="${route(`/products/${c.slug}/`)}">
-                <div class="category-visual" style="${c.image ? `background-image:url('${c.image}');background-size:contain;background-position:center;background-repeat:no-repeat;background-color:#fff;` : ''}">
+                <div class="category-visual" style="${c.image ? `background-image:url('${assetPath(c.image)}');background-size:contain;background-position:center;background-repeat:no-repeat;background-color:#fff;` : ''}">
                   ${!c.image ? `
                     <div class="category-icon-wrap">
                       ${icons[c.icon] || icons.box}
@@ -696,8 +697,8 @@ function homePage() {
           </div>
           <div class="gallery-grid">
             ${galleryImages.map(img => `
-              <div class="gallery-item" data-src="${img.src}" data-caption="${esc(T(img, 'caption'))}">
-                <img src="${img.src}" alt="${esc(T(img, 'alt'))}" loading="lazy">
+              <div class="gallery-item" data-src="${assetPath(img.src)}" data-caption="${esc(T(img, 'caption'))}">
+                <img src="${assetPath(img.src)}" alt="${esc(T(img, 'alt'))}" loading="lazy">
                 <div class="gallery-item-overlay">
                   <span>${esc(T(img, 'caption'))}</span>
                 </div>
@@ -954,7 +955,7 @@ function productDetailPage(slug) {
             <!-- Left: Visual Gallery -->
             <div class="product-detail-gallery">
               <div class="product-main-img">
-                ${imageSrc ? `<img src="${imageSrc}" alt="${esc(T(p))}">` : getCategoryIcon(p.category)}
+                ${imageSrc ? `<img src="${assetPath(imageSrc)}" alt="${esc(T(p))}">` : getCategoryIcon(p.category)}
               </div>
               <div class="notice" style="margin-top:1.25rem;">
                 <strong>${isAr ? 'ملاحظة التوثيق الفني' : 'Engineering Verification Notice'}</strong>
@@ -1068,7 +1069,7 @@ function productDetailPage(slug) {
                 ${related.map(r => `
                   <a class="related-card" href="${route(`/product/${r.slug}/`)}">
                     <div class="related-card-img">
-                      ${r.image ? `<img src="${r.image}" alt="${esc(T(r))}" style="width:100%;height:100%;object-fit:cover;">` : getCategoryIcon(r.category)}
+                      ${r.image ? `<img src="${assetPath(r.image)}" alt="${esc(T(r))}" style="width:100%;height:100%;object-fit:cover;">` : getCategoryIcon(r.category)}
                     </div>
                     <div class="related-card-body">
                       <h4>${esc(T(r))}</h4>
@@ -1232,8 +1233,8 @@ function galleryPage() {
 
           <div class="gallery-grid" id="gallery-container">
             ${galleryImages.map(img => `
-              <div class="gallery-item" data-category="${img.category}" data-src="${img.src}" data-caption="${esc(T(img, 'caption'))}">
-                <img src="${img.src}" alt="${esc(T(img, 'alt'))}" loading="lazy">
+              <div class="gallery-item" data-category="${img.category}" data-src="${assetPath(img.src)}" data-caption="${esc(T(img, 'caption'))}">
+                <img src="${assetPath(img.src)}" alt="${esc(T(img, 'alt'))}" loading="lazy">
                 <div class="gallery-item-overlay">
                   <span>${esc(T(img, 'caption'))}</span>
                 </div>
