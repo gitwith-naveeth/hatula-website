@@ -43,7 +43,7 @@ export const categories = [
     'Control valves, actuators, damper drives and HVAC instrumentation for mechanical systems.',
     'صمامات تحكم ومشغلات وأدوات قياس لأنظمة التكييف الميكانيكية.',
     'hvac',
-    'assets/categories/hvac-controls.jpg'
+    'categories/hvac-controls.jpg'
   ],
   [
     'sensors',
@@ -70,7 +70,7 @@ export const categories = [
     'Replacement components for air conditioning units — motors, capacitors, control boards, thermistors and more.',
     'قطع غيار لوحدات التكييف — موتورات ومكثفات ولوحات تحكم وثرمستورات وغيرها.',
     'spare',
-    'assets/categories/ac-spare-parts.jpg'
+    'categories/ac-spare-parts.jpg'
   ],
   [
     'fire-alarm',
@@ -79,7 +79,7 @@ export const categories = [
     'Smoke detectors, call points, sounders and accessories for fire detection and alarm systems.',
     'كاشفات دخان ونقاط نداء وصفارات وملحقات لأنظمة كشف الحريق والإنذار.',
     'fire',
-    'assets/categories/fire-alarm.jpg'
+    'categories/fire-alarm.jpg'
   ],
   [
     'electrical-mechanical',
@@ -88,7 +88,7 @@ export const categories = [
     'Contactors, terminal blocks, cable glands and general electrical components for industrial applications.',
     'كونتاكتورات وبلوكات توصيل وجلاندات كابلات ومكونات كهربائية للتطبيقات الصناعية.',
     'electrical',
-    'assets/categories/electrical-mechanical.jpg'
+    'categories/electrical-mechanical.jpg'
   ],
   [
     'refrigerator-spare-parts',
@@ -147,7 +147,7 @@ export const brands = {
 export const galleryImages = [
   {
     id: 'founder',
-    src: 'assets/gallery/founder.jpg',
+    src: 'gallery/founder.jpg',
     caption_en: 'Hassan Ibrahim — Founder, Hatalula Trading Est.',
     caption_ar: 'حسن إبراهيم — مؤسس مؤسسة هتالولا للتجارة',
     category: 'company',
@@ -156,7 +156,7 @@ export const galleryImages = [
   },
   {
     id: 'shop-opening',
-    src: 'assets/gallery/shop-opening.jpg',
+    src: 'gallery/shop-opening.jpg',
     caption_en: 'Official opening of Hatalula Trading Est. — مؤسسة هشام عبدالملك الطوالة للتجارة',
     caption_ar: 'الافتتاح الرسمي لمؤسسة هشام عبد الملك الطوالة للتجارة (هتالولا)',
     category: 'company',
@@ -165,7 +165,7 @@ export const galleryImages = [
   },
   {
     id: 'alula-arch',
-    src: 'assets/desert/alula-arch.jpg',
+    src: 'desert/alula-arch.jpg',
     caption_en: 'Al Ula Heritage Inspiration — The majestic desert landscape of Saudi Arabia',
     caption_ar: 'إلهام تراث العلا — المناظر الصحراوية الشامخة في المملكة العربية السعودية',
     category: 'alula',
@@ -174,7 +174,7 @@ export const galleryImages = [
   },
   {
     id: 'elephant-rock',
-    src: 'assets/desert/elephant-rock.jpg',
+    src: 'desert/elephant-rock.jpg',
     caption_en: 'Jabal AlFil (Elephant Rock), Al Ula — Symbol of endurance and Saudi heritage',
     caption_ar: 'جبل الفيل، العلا — رمز الأصالة والصلابة والتراث السعودي',
     category: 'alula',
