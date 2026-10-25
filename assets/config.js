@@ -163,24 +163,6 @@ export const galleryImages = [
     alt_en: 'Official opening of Hatalula Trading establishment with staff and balloons',
     alt_ar: 'الافتتاح الرسمي لمؤسسة هتالولا مع الموظفين والبالونات',
   },
-  {
-    id: 'alula-arch',
-    src: 'desert/alula-arch.jpg',
-    caption_en: 'Al Ula Heritage Inspiration — The majestic desert landscape of Saudi Arabia',
-    caption_ar: 'إلهام تراث العلا — المناظر الصحراوية الشامخة في المملكة العربية السعودية',
-    category: 'alula',
-    alt_en: 'Natural rock arch in Al Ula with sun flare',
-    alt_ar: 'قوس صخري طبيعي في العلا مع شروق الشمس',
-  },
-  {
-    id: 'elephant-rock',
-    src: 'desert/elephant-rock.jpg',
-    caption_en: 'Jabal AlFil (Elephant Rock), Al Ula — Symbol of endurance and Saudi heritage',
-    caption_ar: 'جبل الفيل، العلا — رمز الأصالة والصلابة والتراث السعودي',
-    category: 'alula',
-    alt_en: 'Elephant Rock in Al Ula under clear blue desert sky',
-    alt_ar: 'جبل الفيل في العلا تحت سماء الصحراء الصافية',
-  }
 ];
 
 /* ─────────────────────────────────────────────────
