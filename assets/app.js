@@ -1327,7 +1327,7 @@ function aboutPage() {
         <div class="container">
           <div class="about-grid">
             <div class="about-img-frame">
-              <img src="gallery/founder.jpg" alt="${isAr ? 'حسن إبراهيم مؤسس هتالولا' : 'Hassan Ibrahim, Founder'}">
+              <img src="${assetPath('gallery/founder.jpg')}" alt="${isAr ? 'حسن إبراهيم مؤسس هتالولا' : 'Hassan Ibrahim, Founder'}">
               <div class="about-img-badge">
                 <span class="about-img-badge-icon">🏛</span>
                 <div>
@@ -1396,7 +1396,7 @@ function aboutPage() {
               <a class="btn btn-navy" href="${route('/products/')}">${copy.exploreCatalog}</a>
             </div>
             <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1.5px solid var(--line-light);">
-              <img src="gallery/shop-opening.jpg" alt="${isAr ? 'افتتاح معرض هتالولا' : 'Hatalula showroom opening'}" style="width:100%;height:100%;object-fit:cover;">
+              <img src="${assetPath('gallery/shop-opening.jpg')}" alt="${isAr ? 'افتتاح معرض هتالولا' : 'Hatalula showroom opening'}" style="width:100%;height:100%;object-fit:cover;">
             </div>
           </div>
         </div>
