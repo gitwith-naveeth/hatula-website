@@ -1331,7 +1331,7 @@ function aboutPage() {
               <div class="about-img-badge">
                 <span class="about-img-badge-icon">🏛</span>
                 <div>
-                  <strong>${isAr ? site.companyNameAr : site.companyName}</strong>
+                  <strong>${isAr ? site.founderAr : site.founder}</strong>
                   <span>${isAr ? 'المملكة العربية السعودية' : 'Kingdom of Saudi Arabia'}</span>
                 </div>
               </div>
