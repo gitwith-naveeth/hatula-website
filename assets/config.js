@@ -43,7 +43,7 @@ export const categories = [
     'Control valves, actuators, damper drives and HVAC instrumentation for mechanical systems.',
     'صمامات تحكم ومشغلات وأدوات قياس لأنظمة التكييف الميكانيكية.',
     'hvac',
-    'categories/hvac-controls.jpg'
+    ''
   ],
   [
     'sensors',
@@ -70,7 +70,7 @@ export const categories = [
     'Replacement components for air conditioning units — motors, capacitors, control boards, thermistors and more.',
     'قطع غيار لوحدات التكييف — موتورات ومكثفات ولوحات تحكم وثرمستورات وغيرها.',
     'spare',
-    'categories/ac-spare-parts.jpg'
+    ''
   ],
   [
     'fire-alarm',
@@ -79,7 +79,7 @@ export const categories = [
     'Smoke detectors, call points, sounders and accessories for fire detection and alarm systems.',
     'كاشفات دخان ونقاط نداء وصفارات وملحقات لأنظمة كشف الحريق والإنذار.',
     'fire',
-    'categories/fire-alarm.jpg'
+    ''
   ],
   [
     'electrical-mechanical',
@@ -88,7 +88,7 @@ export const categories = [
     'Contactors, terminal blocks, cable glands and general electrical components for industrial applications.',
     'كونتاكتورات وبلوكات توصيل وجلاندات كابلات ومكونات كهربائية للتطبيقات الصناعية.',
     'electrical',
-    'categories/electrical-mechanical.jpg'
+    ''
   ],
   [
     'refrigerator-spare-parts',
